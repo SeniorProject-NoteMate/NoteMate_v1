@@ -28,7 +28,7 @@ const ListOfChannels = ({channel}) => {
         <Container container direction="column" justify="flex-start" alignItems="stretch">
             <TitleBox>
                 <Title>
-                    Top Channels
+                    Top Courses
                 </Title>
             </TitleBox>
             <ListContent/>

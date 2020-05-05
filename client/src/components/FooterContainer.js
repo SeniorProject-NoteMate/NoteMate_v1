@@ -7,7 +7,7 @@ const Container = styled.div`
     background-color: ${props => props.theme.foreground};
     border-radius: 5px;
     margin-top: 20px;
-    height: 250px;
+    height: 180px;
     color: ${props => props.theme.normalText};
     padding: 4px;
 `
@@ -18,26 +18,19 @@ const FooterContainer = () => {
     <Container>
       <Grid container spacing={2}>
         <Grid item xs={6}>
-          <Typography variant="subtitle1">Seenit</Typography>
+          <Typography variant="subtitle1">NoteMate</Typography>
           <Typography variant="body2">About</Typography>
           <Typography variant="body2">Careers</Typography>
-          <Typography variant="body2">Press</Typography>
-          <Typography variant="body2">Advertise</Typography>
           <Typography variant="body2">Blog</Typography>
         </Grid>
         <Grid item xs={6}>
-          <Typography variant="subtitle1">Using Seenit</Typography>
+          <Typography variant="subtitle1">Using NoteMate</Typography>
           <Typography variant="body2">Help</Typography>
-          <Typography variant="body2">Seenit App</Typography>
-          <Typography variant="body2">Seenit Coins</Typography>
-          <Typography variant="body2">Seenit Premium</Typography>
-          <Typography variant="body2">Seenit Gifts</Typography>
-          <Typography variant="body2">Communities</Typography>
-          <Typography variant="body2">Top Posts</Typography>
+          <Typography variant="body2">NoteMate App</Typography>
         </Grid>
         <Grid item xs={12}>
-          <Typography variant="body2">Terms | Content Policy | Privacy Policy | Mod Policy</Typography>
-          <Typography variant="body2">Seenit 2019. All rights reserved</Typography>
+          <Typography variant="body2">Terms | Content Policy | Privacy Policy</Typography>
+          <Typography variant="body2">NoteMate 2019. All rights reserved</Typography>
         </Grid>
       </Grid>
     </Container>

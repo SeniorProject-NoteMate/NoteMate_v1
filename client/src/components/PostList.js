@@ -22,18 +22,6 @@ const PostList = ({ post, posts }) => {
                 <div style={{ marginTop: "3%" }}>
                     <CircularProgress />
                 </div>
-            }{
-                !post.isFetching &&
-                <FooterDiv>
-                    <Link to={{
-                        pathname: '/create-a-post',
-                        state: { channelId: "none",
-                                channelName: "None" }
-                    }}
-                        style={{ textDecoration: 'none', width: '80%' }}>
-                        <CustomButton><ButtonText>Create Post</ButtonText></CustomButton>
-                    </Link>
-                </FooterDiv>
             }
             {
                 !post.isFetching && ps && ps.length > 0 &&

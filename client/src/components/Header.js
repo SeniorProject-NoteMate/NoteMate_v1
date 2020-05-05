@@ -13,8 +13,6 @@ import MenuItem from '@material-ui/core/MenuItem';
 import MenuList from '@material-ui/core/MenuList';
 
 import { ACCESS_TOKEN, USER_ID } from '../constants';
-import SearchInput from './SearchInput';
-
 
 const Header = () => {
 	const [open, setOpen] = useState(false);
@@ -62,12 +60,11 @@ const Header = () => {
                             Lemon
                         </Typography> */}
 							{/* <img src={logo} alt="Logo" className="logo-header"/> */}
-							<h3 style={{ color: 'white' }}>Seenit</h3>
+							<h3 style={{ color: 'white' }}>NoteMate</h3>
 						</Link>
 
 					</Grid>
 					<Grid item xs={5}>
-						<SearchInput />
 					</Grid>
 					<Grid item xs={4}>
 						<LeftContainer container justify="flex-start" alignItems="center">

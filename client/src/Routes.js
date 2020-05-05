@@ -8,12 +8,13 @@ import Register from './views/Register';
 import Setting from './views/Setting';
 import CreateAPost from './views/CreateAPost';
 import UserProfile from './views/UserProfile';
-import PageNotFound from './components/PageNotFound';
+import PageNotFound from './views/PageNotFound';
+import Room from './views/Room';
 
 let Routes = () => (
 	<Switch>
 		<Route exact path="/" component={Home} />
-		<Route exact path="/channel/:channelId" component={Channel} />
+		<Route exact path="/Room/:RoomId" component={Room} />
 		<Route exact path="/post/:postId" component={Post} />
 		<Route exact path="/register" component={Register} />
        	<Route exact path="/login" component={Login} />
