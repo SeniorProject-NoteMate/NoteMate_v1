@@ -29,4 +29,27 @@ export const dark = {
     buttonHover: '#383838',
     shadow: 'rgba(0, 0, 0, 0.4)'
 };
+
+export const light = {
+  ...constants,
+  darkerBackground: 'c9bdc6',
+  background: '#f7eff5',
+  foreground: '#4353bc',
+  lighterForeground: '#deebf7',
+  darkerForeground: '#2d3c9e',
+  hoverBackground: '#505354',
+  inputBackground: '#4f4b4b',
+  titleBoxBackgroud: 'linear-gradient(#BCAC43, #BCAC43, #BCAC43)',
+  buttonColor: 'linear-gradient(45deg, #d5dcde 90%, #d5dcde 90%)',
+  normalText: '#ffffff',
+  commentNameText: '#1e8ec9',
+  buttonText: '#000000',
+  mutedText: '#b0b8bf',
+  darkText: '#232829',
+  border: '#BCAC43',
+  hoverBorder: '#d9d7d7',
+  accent: '#33a0ff',
+  buttonHover: '#383838',
+  shadow: 'rgba(0, 0, 0, 0.4)'
+};
   

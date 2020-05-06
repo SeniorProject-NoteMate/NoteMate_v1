@@ -8,8 +8,31 @@ import {
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
+const content = [
+    {
+      name: 'English101',
+      id: '2'
+    },
+    {
+      name: 'CMPE195B',
+      id: '7'
+    },
+    {
+      name: 'History17',
+      id: '6'
+    },
+    {
+      name: 'CourseName',
+      id: '15'
+    },
+    {
+      name: 'CourseName',
+      id: '10'
+    }
+  ]
+
 const ListOfChannels = ({channel}) => {
-    const { topChannel: { content }, isFetching } = channel;
+    const { isFetching } = channel;
     const ListContent = () => {
         if(!isFetching && content != null) 
             return (
@@ -28,7 +51,7 @@ const ListOfChannels = ({channel}) => {
         <Container container direction="column" justify="flex-start" alignItems="stretch">
             <TitleBox>
                 <Title>
-                    Top Courses
+                    Openning Courses
                 </Title>
             </TitleBox>
             <ListContent/>
@@ -37,7 +60,7 @@ const ListOfChannels = ({channel}) => {
             </Grid>
             <Grid container justify="center" alignItems="center">
             {   
-                ["sport", "news", "animals"].map((value, index) => (
+                ["programing", "economic", "history"].map((value, index) => (
                     <ChannelSmallBox key={index}>
                         {value}
                     </ChannelSmallBox>
@@ -58,7 +81,7 @@ const ChannelList = ({channels}) => {
         <CustomList dense>
             {channels.map((value, index) => {
                 return (
-                    <Link to={`channel/${value.id}`} key={value.id} style={{ textDecoration: 'none' }}>
+                    <Link to={`room/${value.id}`} key={value.id} style={{ textDecoration: 'none' }}>
                     <ListItem button>
                         <Numb>{index + 1}</Numb>
                         <ListItemAvatar style={{ marginLeft: "3%" }}>

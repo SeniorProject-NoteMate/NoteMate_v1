@@ -14,7 +14,7 @@ import Room from './views/Room';
 let Routes = () => (
 	<Switch>
 		<Route exact path="/" component={Home} />
-		<Route exact path="/Room/:RoomId" component={Room} />
+		<Route exact path="/room/:roomId" component={Room} />
 		<Route exact path="/post/:postId" component={Post} />
 		<Route exact path="/register" component={Register} />
        	<Route exact path="/login" component={Login} />

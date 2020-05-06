@@ -5,11 +5,11 @@ import { ThemeProvider } from 'styled-components';
 import Header from './components/Header';
 import Routes from './Routes';
 import GlobalStyle from './GlobalStyles';
-import { dark } from './constants/theme';
+import { dark, light } from './constants/theme';
 
 const App = () => {
 	return (
-		<ThemeProvider theme={dark}>
+		<ThemeProvider theme={light}>
 			<GlobalStyle/>
 			<div>
 				<Header />

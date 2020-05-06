@@ -59,11 +59,9 @@ const UserProfile = () => {
         <div>
             <AppBar position="static">
                 <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
-                    <Tab label="POSTS" {...a11yProps(0)} />
+                    <Tab label="COURSES" {...a11yProps(0)} />
                     <Tab label="COMMENTS" {...a11yProps(1)} />
-                    <Tab label="SAVED" {...a11yProps(2)} />
-                    <Tab label="UPVOTED" {...a11yProps(3)} />
-                    <Tab label="DOWNVOTED" {...a11yProps(4)} />
+                    <Tab label="NOTES" {...a11yProps(2)} />
                 </Tabs>
             </AppBar>
             <CenterContainer container direction="row" justify="center">

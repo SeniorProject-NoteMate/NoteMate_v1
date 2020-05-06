@@ -21,27 +21,27 @@ const Setting = () => {
                 <Form>
                     <h1 style={{ color: 'orange', fontSize: 24 }}>Account Settings</h1>
                     <Form>
-                        <h2 style={{ color: 'white', fontSize: 21 }}>Account references</h2>
+                        <h2 style={{ color: 'black', fontSize: 21 }}>Account references</h2>
                         <Style>
                             <Style1>
                                 <Grid container spacing={2}>
                                     <Grid item xs={6}>
-                                        <p style={{ color: 'white', fontSize: 17 }}>Email address</p>
-                                        <p style={{ color: 'white', fontSize: 14 }}>{user && user.email}</p>
+                                        <p style={{ color: 'black', fontSize: 17 }}>Email address</p>
+                                        <p style={{ color: 'black', fontSize: 14 }}>{user && user.email}</p>
                                     </Grid>
                                     <Grid item xs={6}>
-                                        <Button className="button is-white" type="secondary" htmlType="submit" size="large">Change</Button>
+                                        <Button className="button is-black" type="secondary" htmlType="submit" size="large">Change</Button>
                                     </Grid>
                                 </Grid>
                             </Style1>
                             <Style1>
                                 <Grid container spacing={2}>
                                     <Grid item xs={6}>
-                                        <p style={{ color: 'white', fontSize: 17 }}>Reset password</p>
-                                        <p style={{ color: 'white', fontSize: 14 }}>A password must be between 2 to 20 characters</p>
+                                        <p style={{ color: 'black', fontSize: 17 }}>Reset password</p>
+                                        <p style={{ color: 'black', fontSize: 14 }}>A password must be between 2 to 20 characters</p>
                                     </Grid>
                                     <Grid item xs={6}>
-                                        <Button className="button is-white" type="primary" htmlType="submit" size="large">Change</Button>
+                                        <Button className="button is-black" type="primary" htmlType="submit" size="large">Change</Button>
                                     </Grid>
                                 </Grid>
                             </Style1>
@@ -49,16 +49,16 @@ const Setting = () => {
                     </Form>
 
                     <Form>
-                        <h2 style={{ color: 'white', fontSize: 21 }}>Deactivate account</h2>
+                        <h2 style={{ color: 'black', fontSize: 21 }}>Deactivate account</h2>
                         <Style>
                             <Style1>
                                 <Grid container spacing={2}>
                                     <Grid item xs={6}>
-                                        <p style={{ color: 'white', fontSize: 17 }}>Delete Account</p>
-                                        <p style={{ color: 'white', fontSize: 14 }}>current username</p>
+                                        <p style={{ color: 'black', fontSize: 17 }}>Delete Account</p>
+                                        <p style={{ color: 'black', fontSize: 14 }}>current username</p>
                                     </Grid>
                                     <Grid item xs={1}>
-                                        <Button className="button is-white" type="secondary" htmlType="submit" size="large">Delete</Button>
+                                        <Button className="button is-black" type="secondary" htmlType="submit" size="large">Delete</Button>
                                     </Grid>
                                 </Grid>
                             </Style1>

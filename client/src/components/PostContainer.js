@@ -32,7 +32,7 @@ import {
 const PostContainer = ({ postDetails }) => {
 	const time = calTime(postDetails.post.createdAt);
 	const uId = localStorage.getItem(USER_ID);
-	const postedBy = `Posted by ${postDetails.userName} · ${time} `;
+	const postedBy = `Hosted by ${postDetails.userName} · ${time} `;
 	const savedPosts = useSelector(state => state.post.savedPosts);
 	const votedPosts = useSelector(state => state.post.votedPosts);
 	const upVotedPosts = useSelector(state => state.post.upVotedPosts);
@@ -170,23 +170,6 @@ const PostContainer = ({ postDetails }) => {
 				</DialogActions>
 			</Dialog>
 			<Grid container direction="row" justify="center" spacing={0}>
-				<LeftArea item xs={1}>
-					<Grid container direction="column"
-						justify="center"
-						alignItems="center">
-						<IconButton onClick={handleUpVote} >
-							{!isUp && <ArrowUpIcon size="25" />}
-							{isUp && <ArrowUpIconHighlighted size="25" />}
-						</IconButton>
-						<Votes>
-							{points}
-						</Votes>
-						<IconButton onClick={handleDownVote} >
-							{!isDown && <ArrowDownIcon size="25" />}
-							{isDown && <ArrowDownIconHighlighted size="25" />}
-						</IconButton>
-					</Grid>
-				</LeftArea>
 				<Grid item xs={11}>
 					<CustomCardHeader
 						avatar={
@@ -203,7 +186,7 @@ const PostContainer = ({ postDetails }) => {
 						title={postDetails.channel.name}
 						subheader={postedBy}
 					/>
-					<Link to={`/post/${postDetails.post.id}`} style={{ textDecoration: 'none' }}>
+					<Link to={`/room/${postDetails.post.id}`} style={{ textDecoration: 'none' }}>
 						<PostTitle>
 							{postDetails.post.title}
 						</PostTitle>
@@ -218,14 +201,6 @@ const PostContainer = ({ postDetails }) => {
 							</BodyText>
 						</CardContent>
 					</Link>
-					<CardActions disableSpacing>
-						<IconButton aria-label="add to favorites" >
-							<CommentIcon />
-						</IconButton>
-						<IconButton aria-label="share">
-							<ShareIcon />
-						</IconButton>
-					</CardActions>
 					{/* </Card> */}
 				</Grid>
 			</Grid>
