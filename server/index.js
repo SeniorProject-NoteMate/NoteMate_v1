@@ -3,6 +3,7 @@ const moongoose = require("mongoose");
 const dotenv = require("dotenv");
 
 const authRoute = require("./routes/auth");
+const testRoute = require("./routes/test");
 
 dotenv.config();
 
@@ -15,5 +16,6 @@ moongoose.connect(
 app.use(express.json());
 
 app.use("/api/user", authRoute);
+app.use("/api/test", testRoute);
 
 app.listen(8080, () => console.log("Server up and running"));
