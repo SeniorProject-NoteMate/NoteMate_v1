@@ -33,13 +33,13 @@ async function post(endpoint, body, token = null) {
     const headers = new Headers({
         'Content-Type': 'application/json',
     })
-    //console.log("HIIIIII=========================");
+    
     if (localStorage.getItem(ACCESS_TOKEN)) {
         headers.append('Authorization', 'Bearer ' + localStorage.getItem(ACCESS_TOKEN))
     }
     const defaults = { headers: headers };
     options = Object.assign({}, defaults, options);
-
+    console.log(options);
     const response = await fetch(`${baseUrl}/${endpoint}`, options);
     const json = await response.json();
 
@@ -69,7 +69,7 @@ export async function login(loginRequest) {
 }
 
 export async function signup(signupRequest) {
-    return await post(`api/auth/signup`, signupRequest);
+    return await post(`api/auth/register`, signupRequest);
 }
 
 export async function checkUsernameAvailability(username) {

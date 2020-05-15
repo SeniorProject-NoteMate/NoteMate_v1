@@ -108,7 +108,7 @@ class Register extends Component {
                                 name="password" 
                                 type="password"
                                 autoComplete="off"
-                                placeholder="A password between 2 to 20 characters" 
+                                placeholder="A password between 6 to 20 characters" 
                                 value={this.state.password.value} 
                                 onChange={(event) => this.handleInputChange(event, this.validatePassword)} />    
                         </FormItem>
