@@ -34,7 +34,7 @@ class Room extends Component {
 
 			<div className="recordForm">
 				<div className="roomTitle">
-				{/* <h4>{titles[this.params.postId]}</h4> */}
+				<h4>Name</h4>
 				</div>
 				<div className="PageForm" >
 					<div className="leftBox" >
