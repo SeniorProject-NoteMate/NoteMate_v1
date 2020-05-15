@@ -15,7 +15,7 @@ moongoose.connect(
 
 app.use(express.json());
 
-app.use("/api/user", authRoute);
+app.use("/api/auth", authRoute);
 app.use("/api/test", testRoute);
 
 app.listen(8080, () => console.log("Server up and running"));
